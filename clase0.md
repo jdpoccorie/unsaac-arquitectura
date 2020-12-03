@@ -67,8 +67,32 @@ Hay cuatro componentes estructurales principales en la estructura interna del co
 
 El componente más interesante para nosotros es el CPU. Sus principales componentes estructurales son:
 * **Unidad de control** Controla el funcionamiento de la CPU y por tanto del computador
+
+![Unidad De Control](./img/uc.PNG)
+
 * **Unidad Aritmético-lógico (ALU, Arithmetic Logic Unit):** Lleva a cabo las funciones de procesamiento de datos del computador
-* **Registros:** Proporcionan almacenamiento interno a la CPU, Existen memorias internas(en un inicio) externas e intermedias que son lo que ahora se usa por su capacidad(memoria nivel 1, nivel2 Se les conoce como memoria cache). Los registros trabajan en conjunto para almacenar
+  ![ALU](./img/alu.PNG)
+* **Registros:** Proporcionan almacenamiento interno a la CPU, Existen memorias internas(en un inicio) externas e intermedias que son lo que ahora se usa por su capacidad(memoria nivel 1, nivel2 Se les conoce como memoria cache). Los registros trabajan en conjunto para almacenar.
+  ![Registros](./img/registros.PNG)
+  * **Externos** Realizan los direccionamientos de memoria, alberga información que esta fuera del procesador. Existen 14 registros.
+  ![Registros](./img/14registrosExternos.PNG)
+    * **AX**.- Se almacenan resultados, la parte más significativa.
+    * **BX**.- Segunda parte de una dirección de memoria, parte de desplazamiento offset
+    * **CX**.- Estructura loop, Es un contador que sirve como reloj, en el sentido de que las operaciones se tengan que realizar en tiempos equitativos. Envia una señal por cada operación hasta llegar a cero.
+    * **DX**.- Almacena la parte menos significativa que es un resultado de la ALU.
+    * **CS**.- Segmento de código (forman parte de una dirección)
+    ![Registros](./img/cs.PNG)
+    * **SS**.- Dirección con pilas. Es una pila que contiene los datos e instrucciones.
+    * **ES**.- Cuando el *DS* desborda se apoya en el *ES*(Segmento extra)
+    * **PI**.- Trabaja con un registro interno. Puntero de instrucciones(Almacena la dirección de la siguiente instrucción)
+    * **BP**.- Puntero de la base de la pila, cuando ya tenga un SS
+    * **SP**.- Puntero que apunta a toda la pila.
+    ![Punteros](./img/punteros.PNG)
+    * **SI**.- Sort index
+    * **DI**.- Destination index
+    * **Flags**.- (Estados) o las señales que se van a generar (1 bit yes, not) Funciones de desborde, acarreo, cero, etc.
+    * A partir del cpu 386, 486 los registros se pueden expandir
+    ![Registros expandidos](./img/registrosExpandidos.PNG)
 * **Interconexiones CPU** (buses)Son mecanismos que proporcionan comunicación entre la unidad de control, ALU, y los registros. Son de tipo bidireccional en la gran mayoría.
 
 ### Ciclo de instrucción
@@ -82,3 +106,5 @@ El componente más interesante para nosotros es el CPU. Sus principales componen
 * transferencia asincrona.- tiempos de transferencia eran diferentes RS-232-C -> IBM
 * transferencia paralela
 * transferencia serial
+
+
