@@ -37,7 +37,7 @@ La figura 1.1 señala las funciones básicas que un computador puede llevar a ca
 
 El computador, por supuesto, tiene que ser capaz de **procesar datos**. Los datos pueden adoptar una gran variedad de formas, y el rango de los requisitos de procesado es amplio. Sin embargo, veremos que hay solo unos pocos métodos o tipos fundamentales de procesado de datos.
 
-![Una visión funcional de un computador](./img/funcionamiento.png)
+![Una visión funcional de un computador](./img/funcionamiento.PNG)
 **Figura 1.1.** Una visión funcional de un computador
 
 El computador tiene que ser capaz de **transferir datos** entre él mismo y el mundo exterior. Cuando se reciben o se llevan datos a un dispositivo que esta conectado con el computador, el proceso se le conoce como *entrada-salida (E/S)*, y este dispositivo recibe el nombre de periférico. El proceso de transferir datos a largas distancias, desde o hacia un dispositivo remoto, recibe el nombre de *comunicación de datos*. (Ver a)
